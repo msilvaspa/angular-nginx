@@ -8,4 +8,4 @@ RUN ng build --prod
 FROM nginx:1.15
 RUN rm -rf /usr/share/nginx/html/*
 COPY nginx.conf /etc/nginx/
-COPY --from=builder /app/dist/getpharma-front /usr/share/nginx/html
+COPY --from=builder /app/dist/APP-NAME /usr/share/nginx/html
